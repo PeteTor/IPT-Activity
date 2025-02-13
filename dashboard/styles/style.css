@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1E1D1E;
+}
+
+/* Dash board layout*/
+.dashboard {
+  display: flex;
+  height: 100vh;
+
+}
+
+/* Sidebar layout*/
+.sidebar {
+  width: 15%;
+  height: 100%;
+  background-color: #171717;
+  color: azure;
+  padding: 20px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.9);
+}
+
+.sidebar .logo {
+  font-size: 24px;
+}
+
+.sidebar .menu {
+  list-style: none;
+}
+
+.sidebar .menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar .menu li a {
+
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar .menu li span {
+  margin-left: 10px;
+}
+
+.sidebar .menu li a:hover {
+  background-color: #282828;
+  transform: translateX(-5px);
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.sidebar .menu li a.active {
+  background-color: #168FFF;
+  font-weight: bolder;
+  color: white;
+}
+
+
+.heads {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+
+
+}
+
+.heads .logo {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.9);
+}
+
+/* Main content Layout*/
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #151314;
+  color: white;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.9);
+}
+
+.topbar .search input {
+  padding: 10px;
+  background-color: #1E1D1E;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: white;
+  width: 300px;
+}
+
+.topbar .user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.topbar .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+/* Content Area layout */
+.content {
+  display: 1;
+  padding: 20px;
+  color: white;
+}
+
+.content p {
+  margin: 20px;
+}
+
+/* advertisement css (index.html) */
+/* Alingnment and position of the advertisement cards */
+.advertisement {
+  padding-left: 45px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+/* Sales cards (products.html*/
+.sale-1 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  gap: 25px;
+}
+
+.sale-2 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* cards*/
+/* advertisement cards bootstrap*/
+.card:hover {
+  border: 1px solid #ccc;
+
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.9);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card img:hover {
+  opacity: 0.8;
+}
+
+/* Accounts Css*/
+.accounts {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.user-prof {
+  align-items: center;
+  justify-content: center;
+  background-color: #171717;
+  padding: 3.125rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.9);
+  transition: transform 0.2s ease-in-out;
+}
+
+.user-prof:hover {
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.user-prof img {
+  padding-bottom: 0.625rem;
+}
+
+.sub-btn {
+  padding-top: 0.313rem;
+  padding-bottom: 0.313rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  border-radius: 0.313rem;
+  background-color: #168FFF;
+  color: white;
+  border: none;
+}
+
+.sub-btn:hover {
+  background-color: #3e91df;
+}
+
+/*Reports.html table design*/
+.table-striped th {
+  background-color: #171717;
+  color: white;
+  border: 0.063rem solid #282828;
+  border-collapse: collapse;
+}
+
+.table-striped td {
+  background-color: #171717;
+  color: white;
+  border: 0.063rem solid #282828;
+  border-collapse: collapse;
+}
+
+/*Settings Css (settings.html)*/
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  color: white;
+  gap: 30px;
+}
+
+.setting-menu-1 {
+  background-color: #171717;
+  box-shadow: 1px 1px 10px rgba(71, 67, 67, 0.5);
+  padding: 80px;
+  border-radius: 10px;
+}
+
+.setting-menu-2 {
+  background-color: #171717;
+  box-shadow: 1px 1px 10px rgba(71, 67, 67, 0.5);
+  padding: 80px;
+  border-radius: 10px;
+}
+
+.setting-menu-1 li {
+  margin-bottom: 50px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.setting-menu-2 li {
+  margin-bottom: 50px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.setting-menu-1 span {
+  font-weight: bold;
+}
+
+.setting-menu-2 span {
+  font-weight: bold;
+}
+
+
+.setting-menu-1 li img, .setting-menu-2 li img {
+  margin-right: 10px;
+}
